@@ -28,7 +28,7 @@ for(i=0; i<=arr.length - 1; i++) {
 // creat container boxs Div
 let container = document.createElement(`div`);
 container.className="cont";
-container.style="background-color:#777; display:flex; padding:20px; flex-wrap:wrap; justify-content:space-between; gap:20px min-height calc(100vh-142px); box-sizing:border-box; "
+container.style="background-color:#777; display:flex; padding:10px; flex-wrap:wrap; justify-content:space-between; gap:20px min-height calc(100vh-142px); box-sizing:border-box; "
 document.body.appendChild(container);
 
 // creat boxs Div
@@ -36,7 +36,7 @@ document.body.appendChild(container);
 for(i=0; i<15; i++) {
     let boxs = document.createElement(`div`);
     boxs.className="product";
-    boxs.style="padding:20px; gap:20px, 20px; background-color:rgb(255,255,255); border:1px solid rgb(221,211,211); width: calc((100% - 40px)/3); box-sizing:border-box; text-align:center; color:rgb(136,136,136); border-radius:6px;"
+    boxs.style="padding:20px; margin:10px; background-color:rgb(255,255,255); border:1px solid rgb(221,211,211); width: calc((100% - 60px)/3); box-sizing:border-box; text-align:center; color:rgb(136,136,136); border-radius:6px;"
     container.appendChild(boxs);
     let span=document.createElement(`span`);
     span.style="font-size:40px; color:black; font-weight:Bold; display:block; margin-bottom:10px; margin-top:10px;"
