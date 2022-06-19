@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --maincolor: #FF9800;
+}
+
+
+/* Start Setting box */
+.setting-box {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.80);
+    z-index: 1000;
+    width: 200px;
+    min-height: 100vh;
+    transition: .3s;
+}
+
+.setting-box .fa-gear {}
+
+.setting-box .setting-content {}
+
+/* End Setting box */
+
+
+/* Start Landing Page */
+
+.landing-page {
+    min-height: 100vh;
+    background-image: url(../imgs/1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing-page .Overlay {
+    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+.header-area {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    padding: 15px;
+
+
+}
+
+.header-area .logo {
+    width: 300px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.header-area .links {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-left: 0;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.header-area .links li {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.header-area .links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-area .links li a:hover,
+.header-area .links li a.active {
+    color: var(--maincolor);
+    transition: .3s;
+}
+
+.Intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.Intro h1 {
+    text-align: center;
+    font-size: 34px;
+    margin: 0 0 12px;
+    width: 100%;
+}
+
+.Intro p {
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
+}
+
+.Intro h1 span {
+    color: var(--maincolor);
+}
+
+/* End Landing Page */
