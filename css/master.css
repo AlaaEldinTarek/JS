@@ -3,25 +3,126 @@ body {
 }
 
 :root {
-    --maincolor: #FF9800;
+    --maincolor: #FFFC00;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 /* Start Setting box */
 .setting-box {
     position: fixed;
     left: -200px;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(54, 54, 54, 0.5);
     z-index: 1000;
     width: 200px;
     min-height: 100vh;
-    transition: .3s;
+    transition: .5s;
+    text-align: center;
 }
 
-.setting-box .fa-gear {}
+.setting-box.open {
+    left: 0;
+}
 
-.setting-box .setting-content {}
+.setting-box .spain-seting {
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    background-color: rgba(54, 54, 54, .5);
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.setting-box .spain-seting .sett {
+    width: 30px;
+    padding: 8px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.setting-box .setting-container {
+    text-align: center;
+}
+
+
+
+.setting-box .option-box h5 {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+.setting-box .setting-container .option-box {
+    padding: 20px;
+}
+
+.setting-box .setting-container .option-box h4 {
+    margin: 0;
+    color: white;
+
+}
+
+.setting-box .setting-container .option-box .colors-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.setting-box .setting-container .option-box .colors-list li {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .5;
+    display: inline-block;
+}
+
+.setting-box .setting-container .option-box .colors-list li.active {
+    opacity: 1;
+    border: 2px solid white;
+}
+
+.setting-box .setting-container .option-box .colors-list li:first-child {
+    background-color: #FFFC00;
+}
+
+.setting-box .setting-container .option-box .colors-list li:nth-child(2) {
+    background-color: #1AB7EA;
+}
+
+.setting-box .setting-container .option-box .colors-list li:nth-child(3) {
+    background-color: #E51400;
+}
+
+.setting-box .setting-container .option-box .colors-list li:nth-child(4) {
+    background-color: #00C300;
+}
+
+.setting-box .setting-container .option-box .colors-list li:nth-child(5) {
+    background-color: #FA6800;
+}
+
+.setting-box .random-background .yes,
+.setting-box .random-background .no {
+    width: 50px;
+    background-color: var(--maincolor);
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    opacity: .5;
+    cursor: pointer;
+    margin: 15px 5px 0 5px;
+}
+
+.setting-box .random-background span.active {
+    opacity: 1;
+}
 
 /* End Setting box */
 
@@ -32,11 +133,14 @@ body {
     min-height: 100vh;
     background-image: url(../imgs/1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: relative;
+
 }
 
 .landing-page .Overlay {
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(0, 0, 0, 0.50);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -84,7 +188,7 @@ body {
 }
 
 .header-area .links li a:hover,
-.header-area .links li a.active {
+.header-area .links li a.Active {
     color: var(--maincolor);
     transition: .3s;
 }
@@ -97,13 +201,15 @@ body {
     z-index: 2;
     color: white;
     text-align: center;
+    width: 100%;
+    padding: 0 40px;
 }
 
 .Intro h1 {
     text-align: center;
     font-size: 34px;
     margin: 0 0 12px;
-    width: 100%;
+
 }
 
 .Intro p {
@@ -115,5 +221,6 @@ body {
 .Intro h1 span {
     color: var(--maincolor);
 }
+
 
 /* End Landing Page */
