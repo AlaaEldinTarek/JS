@@ -256,7 +256,7 @@ body {
 
 .landing-page {
     min-height: 100vh;
-    background-image: url(../imgs/1.jpg);
+    background-image: url('./imgs/1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -425,13 +425,16 @@ body {
     padding-bottom: 50px;
     display: flex;
 }
+
 @media (max-width: 768px) {
+
     /*  Medium Devices  => Tablets */
-    .about-us{
+    .about-us {
         display: block;
         text-align: center;
     }
 }
+
 .about-us .info-box {
     flex: 1;
     padding: 30px;
@@ -486,25 +489,31 @@ body {
     padding: 15px;
     margin: 15px 50px;
 }
+
 @media (max-width: 768px) {
+
     /*  Medium Devices  => Tablets */
     .skills .skill-box {
         display: block;
     }
 }
+
 .skills .skill-box .skill-name {
     font-weight: bold;
     width: 140px;
     text-align: center;
     line-height: 30px;
 }
+
 @media (max-width: 768px) {
+
     /*  Medium Devices  => Tablets */
     .skills .skill-box .skill-name {
         width: 100%;
         margin-bottom: 10px;
     }
 }
+
 .skills .skill-box .skill-progress {
     height: 30px;
     width: 100%;
@@ -610,14 +619,14 @@ body {
 
 /* Start Contact Us */
 .contact {
-    background-image: url('../imgs/Contact-Us.jpg');
+    background-image: url('./imgs/Contact-Us.jpg');
     background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
-    
+
 }
 
 .contact .overlay {
@@ -663,14 +672,17 @@ body {
     float: right;
     width: 49%;
 }
-@media (max-width: 768px) { 
+
+@media (max-width: 768px) {
+
     .contact form .left,
     .contact form .right {
         float: none;
         width: 100%;
     }
-    
+
 }
+
 .contact form input:not([type="submit"]),
 .contact form textarea {
     display: block;
