@@ -313,26 +313,6 @@ document.querySelector(".reset-opthions").onclick = function () {
 }
 
 //  Toggle Menu
-// let toggleLeBn =document.querySelector(".toggle-menu");
-// let tLinks=document.querySelector(".links");
-// toggleLeBn.onclick = function (e) {
-//     e.stopPropagation();
-    
-// };
-// tLinks.onclick = function (e) {
-//     e.stopPropagation();
-// };
-// document.addEventListener("click", (e) => {
-//     if (e.target !== toggleLeBn && e.target !== tLinks) {
-
-//         if (tLinks.classList.contains("open")) {
-//             toggleLeBn.classList.toggle("menu-active");
-//             tLinks.classList.toggle("open");
-            
-//         }
-//     }
-// });
-
 
 let toggleLeBn =document.querySelector(".toggle-menu");
 let tLinks=document.querySelector(".links");
