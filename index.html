@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Design</title>
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/master.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
@@ -40,6 +40,18 @@
                 <span class="no" data-background="no">No</span>
             </div>
         </div>
+        <div class="option-box">
+            <h5>Show Bullets</h5>
+            <div class="bullets-option">
+                <span class="yes active" data-display="show">Yes</span>
+                <span class="no" data-display="hide">No</span>
+            </div>
+        </div>
+        <div class="option-box">
+            <div class="reset-opthions">
+                Reset Opthions
+            </div>
+        </div>
     </div>
     <!-- End Setting box -->
 
@@ -50,12 +62,19 @@
 
         <div class="header-area">
             <div class="logo">Speical Design</div>
-            <ul class="links">
-                <li><a href="#" class="Active">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="links-container">
+                <ul class="links ">
+                    <li><a href="#" data-section=".about-us">About</a></li>
+                    <li><a href="#" data-section=".skills">Skills</a></li>
+                    <li><a href="#" data-section=".gallery">Our Gallery</a></li>
+                    <li><a href="#" data-section=".contact">Contact</a></li>
+                </ul>
+                <button class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
 
         <div class="Intro">
@@ -73,12 +92,13 @@
         <div class="about-us">
             <div class="info-box">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem fuga aspernatur nisi ratione
-                    blanditiis cum rem perferendis libero ut praesentium in impedit beatae voluptas animi, asperiores ad
-                    architecto vitae.</p>
+                <p>front end developer with experience building responsive web design in the financial industry.
+                    Proficient with CSS and JS Frameworks, with extensive knowledge of UX and user psychology. Notable
+                    achievements include boosting the conversion rate of an existing website by 80% with improved code
+                    and design.</p>
             </div>
             <div class="img-box">
-                <img src="/imgs/6.png" alt="">
+                <img src="../imgs/Front-end-developer.png" alt="">
             </div>
         </div>
     </div>
@@ -87,33 +107,99 @@
     <!-- Start Our Skills -->
 
     <div class="skills">
-        <div class="container"></div>
-        <h2>Our Skills</h2>
-        <div class="skill-box">
-            <div class="skill-name">HTML</div>
-            <div class="skill-progress">
-                <span data-progress="90%"></span>
-            </div>
+        <div class="container">
+            <h2>Our Skills</h2>
+            <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
 
-        </div>
-        <div class="skill-box">
-            <div class="skill-name">CSS</div>
-            <div class="skill-progress">
-                <span data-progress="80%"></span>
             </div>
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span data-progress="80%"></span>
+                </div>
 
-        </div>
-        <div class="skill-box">
-            <div class="skill-name">JaveScript</div>
-            <div class="skill-progress">
-                <span data-progress="70%"></span>
             </div>
+            <div class="skill-box">
+                <div class="skill-name">JaveScript</div>
+                <div class="skill-progress">
+                    <span data-progress="70%"></span>
+                </div>
 
+            </div>
         </div>
     </div>
     </div>
     <!-- End Our Skills -->
-    <script src="/js/master.js"></script>
+    <!-- Start Gallery -->
+    <div class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="images-box">
+                <img src="/imgs/11.jpg" alt="image one">
+                <img src="/imgs/22.jpg" alt="image two">
+                <img src="/imgs/33.jpg" alt="image there">
+                <img src="/imgs/44.jpg" alt="image four">
+                <img src="/imgs/55.jpg" alt="image five">
+                <img src="/imgs/66.jpg" alt="">
+                <img src="/imgs/77.jpg" alt="">
+                <img src="/imgs/88.jpg" alt="">
+                <img src="/imgs/99.jpg" alt="">
+                <img src="/imgs/10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- Start Nav Buliets  -->
+    <div class="nav-bulits">
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip">About Us</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip">Our Skills</div>
+
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip">Our Gallery</div>
+
+        </div>
+
+        <div class="bullet" data-section=".contact">
+            <div class="tooltip">Contact Us</div>
+
+        </div>
+        
+    </div>
+
+    <!-- End Nav Buliets -->
+    <!-- Start Contact Us -->
+    <div class="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="username">
+                    <input type="phone" placeholder="Your Phone" name="Phone">
+                    <input type="email" placeholder="Your Email" name="email">
+                    <input type="text" placeholder="Subject" name="supject">
+                </div>
+                <div class="right">
+                    <textarea name="massage" placeholder="Your Massage"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- end Contact Us -->
+
+
+    <script src="../js/master.js"></script>
 </body>
 
 </html>
