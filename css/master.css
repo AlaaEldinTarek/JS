@@ -256,7 +256,7 @@ body {
 
 .landing-page {
     min-height: 100vh;
-    background-image: url("./imgs/1.jpg");
+    background-image: url(/imgs/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -619,7 +619,7 @@ body {
 
 /* Start Contact Us */
 .contact {
-    background-image: url("./imgs/Contact-Us.jpg");
+    background-image: url(/imgs/Contact-Us.jpg);
     background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
